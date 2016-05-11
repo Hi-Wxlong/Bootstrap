@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../Scripts/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Scripts/bootstrap-3.3.5-dist/css/bootstrap-table.css">
+
+</head>
+<body>
+
+<table data-toggle="table"
+       data-url="https://api.github.com/users/wenzhixin/repos?type=owner&sort=full_name&direction=asc&per_page=100&page=1"
+       data-sort-name="stargazers_count"
+       data-sort-order="desc">
+    <thead>
+    <tr>
+        <th data-field="name" 
+            data-sortable="true">
+                Name
+        </th>
+        <th data-field="stargazers_count" 
+            data-sortable="true">
+                Stars
+        </th>
+        <th data-field="forks_count" 
+            data-sortable="true">
+                Forks
+        </th>
+        <th data-field="description" 
+            data-sortable="true">
+                Description
+        </th>
+    </tr>
+    </thead>
+</table>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Scripts/jquery-1.12.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Scripts/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="../Scripts/bootstrap-3.3.5-dist/js/bootstrap-table.js"></script>
+</body>
+</html>
